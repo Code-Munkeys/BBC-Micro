@@ -1,0 +1,32 @@
+   10 *FX200,3
+   20 MODE7
+   30 VDU23;8202;0;0;0;
+   40 PRINT
+   50 PRINT"      “/// /// //// //// //// ////" 
+   60 PRINT"“      /   / / /  /  /    /   /" 
+   70 PRINT"“      /// /// ////  /    /   ///" 
+   80 PRINT"“        / /   / /   /    /   /"   
+   90 PRINT"“        / /   /  /  /    /   /"       
+  100 PRINT"      “/// /   /  / ////  /   ////"       
+  110 PRINT 
+  120 COLOUR1
+  130 PRINT"‘     /          /  /// //// ////"  
+  140 PRINT"‘      /        /    /  /    /"   
+  150 PRINT"‘       /      /     /  //// ////"  
+  160 PRINT"‘        / // /      /     / /"      
+  170 PRINT"‘         /  /      /// //// ////"  
+  180 PRINT
+  190 COLOUR1
+  200 PRINT"ˆ      (C) 1985 MAGNO SOFT"   
+  210 PRINT
+  220 PRINT"       LOADING"
+  230 PRINT
+  240 PRINT"         ";  
+  250 VDU129
+  260 VDU28,5,20,25,18   
+  270 
+  280 T=OPENIN"data1"
+  290 INPUT#T,A
+  300 CLOSE#T
+  310 IF A=100 THEN SOUND1,-15,A,5:SOUND3,-15,A,5: CHAIN"SPRITE2"
+  320 CALL!-4
