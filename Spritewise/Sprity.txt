@@ -19,7 +19,7 @@
   190 COLOUR1
   200 PRINT"à      (C) 1985 MAGNO SOFT"   
   210 PRINT
-  220 PRINT"       LOADING"
+  220 PRINT"       LOADING…”
   230 PRINT
   240 PRINT"         ";  
   250 VDU129
