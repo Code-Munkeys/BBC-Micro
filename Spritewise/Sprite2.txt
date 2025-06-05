@@ -9,7 +9,7 @@
    90P$=STRING$(20," ")
   100S$=P$
   101 *FX 200,3
-  110PRINT "Ç" A$;
+  110PRINT "‚Äö" A$;
   120PROCRUN
   140MODE7
   150PRINT
@@ -50,7 +50,7 @@
   500Z=GET
   510IF Z=13 THEN PROCFILL
   520IF Z=70 THEN PROCFIN
-  530REM"ÉàIF Z=78 THEN GOTO 410       ÅàThis is why you are out of memory.
+  530REM"∆íÀÜIF Z=78 THEN GOTO 410       ¬ÅÀÜThis is why you are out of memory.
   540IF Z=127 THEN PROCDEL  
   550IF INKEY(-87) CLS:CLG:PROCLOAD
   560IF Z<136 OR Z>139 THEN 500 
@@ -65,7 +65,7 @@
   650IF Y>900 THEN Y=200 
   660IF Z>135 AND Z<140 THEN PROCCROSS
   670IF Z=-99 THEN PROCLOAD
-  680REM"ÅàGOTO 470:ÅàSame again
+  680REM"¬ÅÀÜGOTO 470:¬ÅÀÜSame again
   690ENDPROC
   700 
   710DEFPROCFILL
@@ -129,7 +129,7 @@
  1290PRINT"Do you want to save a character ?";
  1300Get=GET
  1310IF Get=ASC("Y")AND &DF PROCSAVE
- 1320 IF Get=ASC("*")                            THEN INPUT P$:                          IF P$="I AM FRANZ"OR                     P$="I AM MIKE" THEN CLS:                CLG:PRINT "JERK !":END
+ 1320 IF Get=ASC("*") THEN INPUT P$:
  1330CLS
  1340PRINT"Do you want to load a character ?";
  1350Get=GET
@@ -165,7 +165,7 @@
  1650ENDPROC 
  1660 
  1670DEFPROCSAVE
- 1680REM"Å*** SAVE CHARACTER ***
+ 1680REM"¬Å*** SAVE CHARACTER ***
  1690CLS
  1700INPUT " CHARACTER NAME :" name$
  1710T=OPENOUT name$
@@ -175,7 +175,7 @@
  1750CLS
  1760ENDPROC
  1770 
- 1780REM"Å*** LOAD CHARACTER ***
+ 1780REM"¬Å*** LOAD CHARACTER ***
  1790DEFPROCLOAD
  1800CLS 
  1810INPUT " CHARACTER NAME :" name$
@@ -211,25 +211,25 @@
  2110IF A$="SECURITY" THEN SOUND1,-15,1,1:SOUND1,-15,1,1:ENDPROC
  2120CALL!-4
  2130 
- 2140DATA "çùÅà            Spritewise            "
- 2150DATA"çùÅà            Spritewise            "
+ 2140DATA "¬ç¬ù¬ÅÀÜ            Spritewise            "
+ 2150DATA "¬ç¬ù¬ÅÀÜ            Spritewise            "
  2160DATA " "," "
- 2170DATA"ÇUse the cursor keys  to move the cross"
- 2180DATA "Ç            around the grid."
- 2190DATA "ÉENTERÇ and ÉDELETEÇwill fill the grid."
+ 2170DATA "‚ÄöUse the cursor keys  to move the cross"
+ 2180DATA "‚Äö            around the grid."
+ 2190DATA "∆íENTER‚Äö and ∆íDELETE‚Äöwill fill the grid."
  2200DATA " "
- 2210DATA "ÇWhen  you  have  finished a character,"
- 2220DATA"ÇpressÉùÅF úÇand type in its  ASCII code."
+ 2210DATA "‚ÄöWhen  you  have  finished a character,"
+ 2220DATA "‚Äöpress∆í¬ù¬ÅF ≈ì‚Äöand type in its  ASCII code."
  2230DATA " "
- 2240DATA "ÇThe character and its BASIC definition"
- 2250DATA "Ç         will the be displayed."
+ 2240DATA "‚ÄöThe character and its BASIC definition"
+ 2250DATA "‚Äö         will the be displayed."
  2260DATA " "
- 2270DATA "Ç  To define a new character pressÉNÇ."
+ 2270DATA "‚Äö  To define a new character press∆íN‚Äö."
  2280DATA " "
- 2290DATA "ÇTo start again,  or continue,  use the"
- 2300DATA "Çcursor keys and  ÉRETURN Ç to make any"
- 2310DATA "Ç     alerations. (In either case"
- 2320DATA "Ç     the character will remain.)"
+ 2290DATA "‚ÄöTo start again,  or continue,  use the"
+ 2300DATA "‚Äöcursor keys and  ∆íRETURN ‚Äö to make any"
+ 2310DATA "‚Äö     alerations. (In either case"
+ 2320DATA "‚Äö     the character will remain.)"
  2330DATA " "
- 2340DATA                            "   Ç                      àÅPress a key."
+ 2340DATA "   ‚Äö                      ÀÜ¬ÅPress a key."
  2350DATA ** END **
