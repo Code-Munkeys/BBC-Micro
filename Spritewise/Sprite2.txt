@@ -129,7 +129,7 @@
  1290PRINT"Do you want to save a character ?";
  1300Get=GET
  1310IF Get=ASC("Y")AND &DF PROCSAVE
- 1320 IF Get=ASC("*") THEN INPUT P$:
+ 1320IF Get=ASC("*") THEN INPUT P$:
  1330CLS
  1340PRINT"Do you want to load a character ?";
  1350Get=GET
